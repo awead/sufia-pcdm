@@ -1,3 +1,4 @@
 @prefix pcdm: <http://pcdm.org/models#>
+@prefix sufia: <http://sufia.org/models#>
  
-<> a pcdm:Object .
+<> a pcdm:Object, sufia:GenericFile .
