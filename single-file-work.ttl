@@ -1,0 +1,6 @@
+@prefix pcdm: <http://pcdm.org/models#>
+@prefix sufia: <http://sufia.org/models#>
+@prefix dcterms: <http://purl.org/dc/terms/>
+ 
+<> a pcdm:Object, sufia:GenericWork ;
+    dcterms:title "A Single-File Work" .

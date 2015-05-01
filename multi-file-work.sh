@@ -31,7 +31,7 @@ curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcd
 
 # Generic Work
 # A basic container (work) with an indirect container (members) to group two generic files into a work.
-curl -i -X PUT -H "Content-Type: text/turtle" --data-binary @sufia-generic-work.ttl ${BASE}/work
-curl -i -X PUT -H "Content-Type: text/turtle" --data-binary @ldp-indirect.ttl       ${BASE}/work/members
-curl -i -X PUT -H "Content-Type: text/turtle" --data-binary @gf1-proxy.ttl          ${BASE}/work/members/gf1_proxy
-curl -i -X PUT -H "Content-Type: text/turtle" --data-binary @gf2-proxy.ttl          ${BASE}/work/members/gf2_proxy
+curl -i -X PUT -H "Content-Type: text/turtle" --data-binary @multi-file-work.ttl ${BASE}/work
+curl -i -X PUT -H "Content-Type: text/turtle" --data-binary @ldp-indirect.ttl    ${BASE}/work/members
+curl -i -X PUT -H "Content-Type: text/turtle" --data-binary @gf1-proxy.ttl       ${BASE}/work/members/gf1_proxy
+curl -i -X PUT -H "Content-Type: text/turtle" --data-binary @gf2-proxy.ttl       ${BASE}/work/members/gf2_proxy
