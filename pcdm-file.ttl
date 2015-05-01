@@ -1,0 +1,6 @@
+@prefix ldp: <http://www.w3.org/ns/ldp#>
+@prefix pcdm: <http://pcdm.org/models#>
+ 
+<> a ldp:DirectContainer, pcdm:Object ;
+  ldp:membershipResource </fedora/rest/dev/gf/> ;
+  ldp:hasMemberRelation pcdm:hasFile .
