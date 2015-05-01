@@ -5,7 +5,7 @@ represents a Sufia-based application on Fedora 4.
 
 ## What is this?
 
-This is my attempt to understand what a Sufia-PCDM-appoved application would look like in Fedora. There's no Ruby code here, it's strictly a "staw man"
+This is my attempt to understand what a Sufia-PCDM-approved application would look like in Fedora. There's no Ruby code here, it's strictly a "straw man"
 made up of curl requests, RDF, and some actual data that's made up to be like what Sufia creates, i.e. binary data, thumbnail images, and FITS xml
 characterization information.
 
@@ -15,7 +15,7 @@ I'm confused about this LDP and PCDM stuff. I want to see if this holds up to wh
 
 ## What do you want me to do with this?
 
-Nothing, really. But, if you want to see if my understanding jives with your understanding, then...
+Nothing, really, but if you want to see if my understanding jives with your understanding, then...
 
 ## To Use
 
@@ -35,12 +35,12 @@ Nothing, really. But, if you want to see if my understanding jives with your und
 
     ./single-file-work.sh
 
-1. Explore [localhost:8983/fedora/rest/dev](localhost:8983/fedora/rest/dev)
+1. Explore [localhost:8983/fedora/rest/dev](http://localhost:8983/fedora/rest/dev)
 
 1. Run the multi-file example
     
     ./multi-file-work
 
-1. Explore [localhost:8983/fedora/rest/dev](localhost:8983/fedora/rest/dev)
+1. Explore [localhost:8983/fedora/rest/dev](http://localhost:8983/fedora/rest/dev)
 
-1. Tell me if I'm wrong
+1. Tell me where I'm wrong
