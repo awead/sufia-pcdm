@@ -1,5 +1,5 @@
 PREFIX pcdm: <http://pcdm.org/models#>
 INSERT {
-  <> a pcdm:File
+  </fedora/rest/dev/gf2/files/thumbnail/> a pcdm:File
 } WHERE {
 }
