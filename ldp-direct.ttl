@@ -2,6 +2,6 @@
 @prefix pcdm: <http://pcdm.org/models#>
 @prefix sufia: <http://sufia.org/models#>
  
-<> a ldp:DirectContainer, pcdm:Object, pcdm:File ;
+<> a ldp:DirectContainer ;
   ldp:membershipResource </fedora/rest/dev/gf/> ;
   ldp:hasMemberRelation pcdm:hasFile .

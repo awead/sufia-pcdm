@@ -2,4 +2,5 @@
 @prefix ore: <http://www.openarchives.org/ore/terms/>
 
 <> a pcdm:Object ;
-  ore:proxyFor </fedora/rest/dev/gf/> .
+  ore:proxyFor </fedora/rest/dev/gf/> ;
+  ore:proxyIn </fedora/rest/dev/work/> .

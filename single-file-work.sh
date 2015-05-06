@@ -13,13 +13,13 @@ curl -X PUT ${BASE}
 # An basic container (gf) with a direct container (files) that holds the user's original submitted
 # file (content), as well as a thumbnail derivative and FITS characterzation xml file.
 curl -i -X PUT -H   "Content-Type: text/turtle"               --data-binary @sufia-generic-file.ttl ${BASE}/gf
-curl -i -X PUT -H   "Content-Type: text/turtle"               --data-binary @pcdm-file.ttl          ${BASE}/gf/files
+curl -i -X PUT -H   "Content-Type: text/turtle"               --data-binary @ldp-direct.ttl         ${BASE}/gf/files
 curl -i -X PUT -H   "Content-Type: image/jpeg"                --data-binary @file1/content.jpg      ${BASE}/gf/files/content
-curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcdm-file.ru           ${BASE}/gf/files/content/fcr:metadata
+curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcdm-content.ru        ${BASE}/gf/files/content/fcr:metadata
 curl -i -X PUT -H   "Content-Type: image/png"                 --data-binary @file1/thumbnail.png    ${BASE}/gf/files/thumbnail
-curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcdm-file.ru           ${BASE}/gf/files/thumbnail/fcr:metadata
+curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcdm-thumbnail.ru      ${BASE}/gf/files/thumbnail/fcr:metadata
 curl -i -X PUT -H   "Content-Type: text/xml"                  --data-binary @file1/fits.xml         ${BASE}/gf/files/characterization
-curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcdm-file.ru           ${BASE}/gf/files/characterization/fcr:metadata
+curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcdm-fits.ru           ${BASE}/gf/files/characterization/fcr:metadata
 
 # Generic Work
 # A basic container (work) with an indirect container (members) to group the generic file (gf) into a work.
