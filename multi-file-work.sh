@@ -22,7 +22,7 @@ curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcd
 
 curl -i -X PUT -H   "Content-Type: text/turtle"               --data-binary @sufia-generic-file.ttl ${BASE}/gf2
 curl -i -X PUT -H   "Content-Type: text/turtle"               --data-binary @pcdm-multifile-gf2.ttl ${BASE}/gf2/files
-curl -i -X PUT -H   "Content-Type: image/jpeg"                --data-binary @file2/content.jpg      ${BASE}/gf2/files/content
+curl -i -X PUT -H   "Content-Type: application/pdf"           --data-binary @file2/content.pdf      ${BASE}/gf2/files/content
 curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcdm-content2.ru       ${BASE}/gf2/files/content/fcr:metadata
 curl -i -X PUT -H   "Content-Type: image/png"                 --data-binary @file2/thumbnail.png    ${BASE}/gf2/files/thumbnail
 curl -i -X PATCH -H "Content-Type: application/sparql-update" --data-binary @pcdm-thumbnail2.ru     ${BASE}/gf2/files/thumbnail/fcr:metadata
